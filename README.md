@@ -17,4 +17,4 @@ HTML: Structuring the content of the website.
 
 CSS: Styling the website to make it visually appealing and user-friendly.
 
-JavaScript: Adding interactivity and dynamic elements to enhance the user experience. 
+JavaScript: Adding interactivity and dynamic elements to enhance the user experience.
