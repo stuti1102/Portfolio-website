@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -27,7 +27,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 ul {
@@ -106,8 +105,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 25.0rem;
-  width: 25.0rem;
+  height: 25rem;
+  width: 25rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
@@ -117,6 +116,11 @@ nav ul li {
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  transition: box-shadow var(--transition);
+}
+
+.bio:hover {
+  box-shadow: 0px 2px 25px 2px var(--secondary-shadow);
 }
 
 .bio h1 {
@@ -127,6 +131,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
 /* Hero section ends */
 
 /* More about */
@@ -144,6 +149,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+
 /* More about ends */
 
 /* Skills section */
@@ -166,6 +172,7 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+
 /* Skills section ends */
 
 /* Projects section */
@@ -176,14 +183,17 @@ nav ul li {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px 2px var(--primary-shadow);
 }
 
 .projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects-title {
@@ -273,6 +283,7 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
 /* Contacts section ends */
 
 /* Social buttons */
@@ -288,6 +299,7 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -302,6 +314,7 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
 /* Scroll to top button ends */
 
 /* Footer section */
@@ -311,6 +324,7 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
 /* Footer section ends */
 
 /* General (utilities) */
@@ -360,67 +374,29 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    height: 18.75rem;
+    width: 18.75rem;
   }
 
   .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
-  }
-
-  .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
-  }
-
-  .more-about h2 {
-    text-align: center;
-  }
-
-  .more-about p {
-    text-align: justify;
-  }
-
-  .icon {
-    width: 5.875rem;
-    height: 5.25rem;
-  }
-
-  .projects-container {
-    flex-direction: column;
-  }
-
-  .project-container {
-    width: 20.875rem;
-  }
-
-  .contact-form-container {
-    max-width: 23.75rem;
+    width: 18.75rem;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 15rem;
+    width: 15rem;
   }
 
   .bio {
-    width: 18.3rem;
+    width: 100%;
+    padding: 1rem;
   }
-
-  .project-container {
-    width: 17.875rem;
-  }
-
-  .contact-form-container {
-    max-width: 17.75rem;
-  }
+  
 }
